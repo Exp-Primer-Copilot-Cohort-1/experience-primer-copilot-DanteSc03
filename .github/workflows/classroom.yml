@@ -23,7 +23,7 @@ jobs:
         command: "[ $(cat .github/steps/-step.txt) -ge 1 ] || [ $(cat .github/steps/-step.txt)
           = X ]"
         timeout: 10
-        max-score: 1
+        max-score: 2
     - name: Step 1 Copilot Extension
       id: step-1-copilot-extension
       uses: education/autograding-command-grader@v1
